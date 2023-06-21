@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Memory Game/main.css">
+    <title>Memory Game</title>
+</head>
+<body>
+
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div>
+
+    <div class="lose-msg"></div>
+
+    <div class="info-container">
+        <div class="name">Hello: <span></span></div>
+        <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+
+    <div class="memory-blocks">
+        <div class="game-block" data-player="benzema">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/benzema.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="benzema">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/benzema.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="lewandowski">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/lewandowski.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="lewandowski">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/lewandowski.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="modric">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/modric.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="modric">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/modric.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="messi">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Messi.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="messi">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Messi.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="ronaldo">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/ronaldo.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="ronaldo">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/ronaldo.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="mbappe">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Mbappe.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="mbappe">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Mbappe.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="neymar">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Neymar.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="neymar">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Neymar.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="debryune">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/De Bryune.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="debryune">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/De Bryune.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="salah">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Salah.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="salah">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Salah.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="suarez">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Suarez.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="suarez">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/Suarez.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="grizmann">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/grizmann.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="grizmann">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/grizmann.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="haland">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/haland.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-player="haland">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/Memory Game/images/haland.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <audio id="success" src="/Memory Game/audio/success-sound-effect.mp3" preload="auto"></audio>
+    <audio id="fail" src="/Memory Game/audio/wah-wah-wah-sound-effect.mp3" preload="auto"></audio>
+
+    <script src="/Memory Game/main.js"></script>
+</body>
+</html>
